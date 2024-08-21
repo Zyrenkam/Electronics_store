@@ -4,7 +4,6 @@ for (var i=0; i<=35; i++){
     counter[i] = 0;
 }
 
-
 function func(num){
     console.log(counter);
     if (counter[Number(num)] % 2 == 0){
@@ -27,14 +26,9 @@ function func(num){
     return;
 }
 
-
-
-//-------------------------------------------------------
-
 var input,search,pr,result,result_arr, result_store;
 
 function FindOnPage(name, status) {
-
 	input = document.getElementById(name).value;
 	
 	if (input.length<1 && status==true) {
@@ -55,14 +49,11 @@ function FindOnPage(name, status) {
 		    pr=pr.replace(result[i],result_arr[i]);
 		}
 	    document.body.innerHTML = pr;
-
     }
 
     if(status) { 
         FindOnPageGo();
     }
 
-	
-    if(!status) { location.reload();}
+    if(!status) {location.reload();}
 }
-
